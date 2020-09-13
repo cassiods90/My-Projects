@@ -1,0 +1,110 @@
+body{
+    background-color: lightsteelblue;
+}
+
+.title{
+    color: #8d0606;
+    font-family: Pacifico, cursiva;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    font-size: 70px;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-color: #e6e6e6;
+    border-bottom-style: solid;
+}
+
+.section-calc{
+    width:100%;
+    text-align: -webkit-center;
+    padding: 10px;
+}
+
+.calc{
+    width: 350px;
+    height: 510px;
+    background: #e6e6e6;
+    border: solid;
+    border-radius: 20px;
+    border-color: black;
+}
+.calc-div{
+    padding: 10px;
+    align-items: center;
+}
+
+.calc-div-input{
+    width: 300px;
+    height: 80px;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+ul, li {
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+  }
+
+.button{
+    width: 20%;
+    height: 20%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.button-clear{
+    width: 49%;
+    height: 20%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.button-edit{
+    width: 49%;
+    height: 20%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.div-colors {
+    position: absolute;
+    display:block;
+    width: 350px;
+    height: 380px;
+    background: #abf8eb;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5), 0 4px 20px 0 rgba(0,0,0,0.39);
+    border-radius: 20px;
+    border-color: black;
+    margin-left: -20px;
+}
+.button-colors {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.div-colors-text{
+    font-family: cursive;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body id="background-site-color">
+    <header>
+        <h1 id="title-color" class="title"> Calculator Project</h1>
+    </header>
+    <section class="section-calc">
+        <div id="background-calc-color" class="calc">
+            <div class="calc-div">
+                <input type="text" id="result" class="calc-div-input" placeholder="Calculator" disabled="disabled">
+            </div>
+            <Ul>
+                <li>
+                    <button type="button"  onclick="calculate('action', 'c')" class="button-clear" >CLEAR </button>
+                    <button type="button"  onclick="showHide('show-hide')" class="button-edit" >Edit your Calc </button> 
+                        <div id="show-hide" class="div-colors hide">
+                            <div class="div-colors-div">
+                                <p class="div-colors-text">Change Title Color: </p>
+                                <button type="button" onclick="modifyTitleColor('lightcoral')"      class="button-colors" style="background: lightcoral"></button>
+                                <button type="button" onclick="modifyTitleColor('lightsteelblue')"  class="button-colors" style="background: lightsteelblue"></button>
+                                <button type="button" onclick="modifyTitleColor('lightgreen')"      class="button-colors" style="background: lightgreen"></button>
+                                <button type="button" onclick="modifyTitleColor('yellow')"          class="button-colors" style="background: yellow"></button>
+                                <button type="button" onclick="modifyTitleColor('lightslategrey')"  class="button-colors" style="background: lightslategrey"></button>
+                            </div>
+                
+                            <div class="div-colors-div">
+                                <p class="div-colors-text">Change Background Site: </p>
+                                <button type="button" onclick="modifyBackgroundSite('lightcoral')"      class="button-colors" style="background: lightcoral"></button>
+                                <button type="button" onclick="modifyBackgroundSite('lightsteelblue')"  class="button-colors" style="background: lightsteelblue"></button>
+                                <button type="button" onclick="modifyBackgroundSite('lightgreen')"      class="button-colors" style="background: lightgreen"></button>
+                                <button type="button" onclick="modifyBackgroundSite('yellow')"          class="button-colors" style="background: yellow"></button>
+                                <button type="button" onclick="modifyBackgroundSite('lightslategrey')"  class="button-colors" style="background: lightslategrey"></button>
+                            </div>
+                
+                            <div class="div-colors-div">
+                                <p class="div-colors-text">Change Background Calc Color: </p>
+                                <button type="button" onclick="modifyBackgroundCalc('lightcoral')"      class="button-colors" style="background: lightcoral"></button>
+                                <button type="button" onclick="modifyBackgroundCalc('lightsteelblue')"  class="button-colors" style="background: lightsteelblue"></button>
+                                <button type="button" onclick="modifyBackgroundCalc('lightgreen')"      class="button-colors" style="background: lightgreen"></button>
+                                <button type="button" onclick="modifyBackgroundCalc('yellow')"          class="button-colors" style="background: yellow"></button>
+                                <button type="button" onclick="modifyBackgroundCalc('lightslategrey')"  class="button-colors" style="background: lightslategrey"></button>
+                            </div>
+                        </div>                   
+                </li>
+
+                <li>
+                    <button type="button" onclick="calculate('number', 7)" class="button" >7 </button>
+                    <button type="button" onclick="calculate('number', 8)" class="button" >8 </button>
+                    <button type="button" onclick="calculate('number', 9)" class="button" >9 </button>
+                    <button type="button"  onclick="calculate('action', '/')" class="button" >÷ </button>
+                    
+                </li>
+                <li>
+                    <button type="button" onclick="calculate('number', 4)" class="button" >4 </button>
+                    <button type="button" onclick="calculate('number', 5)" class="button" >5 </button>
+                    <button type="button" onclick="calculate('number', 6)" class="button" >6 </button>
+                    <button type="button" onclick="calculate('action', '*')" class="button" >x </button>
+                    
+                </li>
+                <li>
+                    <button type="button" onclick="calculate('number', 1)" class="button" >1 </button>
+                    <button type="button" onclick="calculate('number', 2)" class="button" >2 </button>
+                    <button type="button" onclick="calculate('number', 3)" class="button" >3 </button>
+                    <button type="button" onclick="calculate('action', '-')" class="button" >- </button>
+                    
+                </li>
+                <li>
+                    <button type="button" onclick="calculate('number', 0)" class="button" >0 </button>
+                    <button type="button" onclick="calculate('action', '.')" class="button" >. </button>
+                    <button type="button" onclick="calculate('action', '=')" class="button" >= </button>
+                    <button type="button" onclick="calculate('action', '+')" class="button" >+ </button>
+                </li>
+            </ul>    
+        </div>
+    </section>   
+</body>
+
+
+<script type="text/javascript" src="calculator.js"></script>
+</html>

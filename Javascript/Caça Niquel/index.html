@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=latin1" />
+		<title>Caça Níqueis</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body>
+		<div class="corpo">
+			<div class="creditos_txt">
+				Créditos
+			</div>
+			<div class="creditos">
+				<form>
+					<input id="credito" type="text" size="5" value="R$ 0" readonly />
+				</form>
+			</div>
+		
+			<div class="valor_txt">
+				Valor da Aposta
+			</div>
+			
+			<div class="valor">
+				<form>
+					<input id="aposta" type="text" size="1" value="R$ 1" readonly />
+				</form>
+			</div>
+			
+			<div class="tela">
+				<div class="slot1">
+					<img id="fruta1" src="img/uva.png" />
+				</div>
+				<div class="slot2">
+					<img id="fruta2" src="img/melancia.png" />
+				</div>
+				<div class="slot3">
+					<img id="fruta3" src="img/limao.png" />
+				</div>
+				<div class="slot4">
+					<img id="fruta4" src="img/morango.png" />
+				</div>
+			</div>
+			
+			<div class="botoes">
+				<button  class="botao" onclick="apostaMenos();"> APOSTA - </button>
+				<button  class="botao" onclick="apostaMais();"> APOSTA + </button>
+				<button  class="botao" onclick="jogar();">JOGAR </button>
+			</div>
+			
+			<div class="">
+				<h1>Tabela de Prêmios</h1>
+				<div class="tabela">
+					<br>Caso todas as frutas sejam diferentes, o seu prêmio é de 2X o Valor da Aposta.</br>
+					<p><img src="img/premio1.png" /></p>
+					<br>Caso todas as frutas sejam de uva, o seu prêmio é de 5X o Valor da Aposta.</br>
+					<p><img src="img/premio2.png" /></p>
+					<br>Caso todas as frutas sejam de melancia, o seu prêmio é de de 10X o Valor da Aposta.</br>
+					<p><img src="img/premio3.png" /></p>
+					<br>Caso todas as frutas sejam de limao, o seu prêmio é de de 20X o Valor da Aposta.</br>
+					<p><img src="img/premio4.png" /></p>
+					<br>Caso todas as frutas sejam de morango, o seu prêmio é de de 50X o Valor da Aposta.</br>
+					<p><img src="img/premio5.png" /></p>
+				</div>
+			</div>
+
+			
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="main.js"></script>
+</html>

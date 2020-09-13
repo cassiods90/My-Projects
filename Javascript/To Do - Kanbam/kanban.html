@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title"> Kanban Project</h1>
+    </header>
+    <section class="kanban">
+        <div class="kanban-collum">
+            <div class="collum-title-todo">
+                <div></div>
+                <h1>To Do</h1>
+                <button onclick="newPostit('newPostit')" class="new-postit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+            </div>
+
+
+            <div id="collum-todo" class="collum-content">
+                <div id="background-color" class="hide">
+                    <div  class="postit-title">
+                        <div></div>
+                        <div id="title-color">
+                            <h1 id="title-postit">  </h1>
+                        </div>
+                        
+                        <div class="postits">
+                            <button type="button"  onclick="showHide('show-hide')" class="edit-postit" ><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            
+                            <div id="show-hide" class="postits-edit hide">
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Background Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyBackground('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyBackground('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyBackground('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyBackground('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyBackground('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title Color: </p>
+                                    </div>                                  
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyTitleColor('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyTitleColor('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyTitleColor('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyTitleColor('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyTitleColor('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>                                   
+                                </div>
+                    
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyContentColor('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyContentColor('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyContentColor('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyContentColor('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyContentColor('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                            
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input type="text" id="title-text-input" value="Title" class="postits-input">
+                                    </div>
+                                </div>
+
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input id="content-text-input" type="text" value="Content" class="postits-input" placeholder="Content">
+                                    </div>
+                                </div>
+
+                                <div class="send-button-div">
+                                    <button onclick="insertContent()" class="send-button">Send</button>
+                                </div>
+
+                            </div>                   
+
+                            <button class="delete-postit" onclick="removeContent()"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                        </div>    
+                    </div>
+                    <div id="content-color"class="postit-content">
+                        <p id="content-postit" >   </p>
+                    </div>
+                    <div>
+                        <button onclick="movePostit()" class="next-postit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+
+                </div>
+
+                <div id="background-color2" class="hide">
+                    <div  class="postit-title">
+                        <div></div>
+                        <div id="title-color2">
+                            <h1 id="title-postit2">   </h1>
+                        </div>
+                        
+                        <div class="postits">
+                            <button type="button"  onclick="showHide2('show-hide2')" class="edit-postit" ><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            
+                            <div id="show-hide2" class="postits-edit hide">
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Background Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyBackground2('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyBackground2('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyBackground2('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyBackground2('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyBackground2('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title2 Color: </p>
+                                    </div>                                  
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyTitleColor2('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyTitleColor2('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyTitleColor2('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyTitleColor2('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyTitleColor2('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>                                   
+                                </div>
+                    
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyContentColor2('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyContentColor2('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyContentColor2('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyContentColor2('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyContentColor2('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                            
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input type="text" id="title-text-input2" value="Title" class="postits-input">
+                                    </div>
+                                </div>
+
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input id="content-text-input2" type="text" value="Content" class="postits-input" placeholder="Content">
+                                    </div>
+                                </div>
+
+                                <div class="send-button-div">
+                                    <button onclick="insertContent2()" class="send-button">Send</button>
+                                </div>
+
+                            </div>                   
+
+                            <button class="delete-postit" onclick="removeContent2()"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                        </div>    
+                    </div>
+                    <div id="content-color2"class="postit-content">
+                        <p id="content-postit2" > </p>
+                    </div>
+                    <div>
+                        <button onclick="movePostit2()" class="next-postit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    
+                </div>
+
+                <div id="background-color3" class="hide">
+                    <div  class="postit-title">
+                        <div></div>
+                        <div id="title-color3">
+                            <h1 id="title-postit3"> </h1>
+                        </div>
+                        
+                        <div class="postits">
+                            <button type="button"  onclick="showHide3('show-hide3')" class="edit-postit" ><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            
+                            <div id="show-hide3" class="postits-edit hide">
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Background Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyBackground3('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyBackground3('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyBackground3('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyBackground3('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyBackground3('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title3 Color: </p>
+                                    </div>                                  
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyTitleColor3('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyTitleColor3('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyTitleColor3('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyTitleColor3('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyTitleColor3('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>                                   
+                                </div>
+                    
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyContentColor3('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyContentColor3('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyContentColor3('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyContentColor3('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyContentColor3('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                            
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input type="text" id="title-text-input3" value="Title" class="postits-input">
+                                    </div>
+                                </div>
+
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input id="content-text-input3" type="text" value="Content" class="postits-input" placeholder="Content">
+                                    </div>
+                                </div>
+
+                                <div class="send-button-div">
+                                    <button onclick="insertContent3()" class="send-button">Send</button>
+                                </div>
+
+                            </div>                   
+
+                            <button class="delete-postit" onclick="removeContent3()"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                        </div>    
+                    </div>
+                    <div id="content-color3"class="postit-content">
+                        <p id="content-postit3" >  </p>
+                    </div>
+                    <div>
+                        <button onclick="movePostit3()" class="next-postit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    
+                </div>
+
+                <div id="background-color4" class="hide">
+                    <div  class="postit-title">
+                        <div></div>
+                        <div id="title-color4">
+                            <h1 id="title-postit4">  </h1>
+                        </div>
+                        
+                        <div class="postits">
+                            <button type="button"  onclick="showHide4('show-hide4')" class="edit-postit" ><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            
+                            <div id="show-hide4" class="postits-edit hide">
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Background Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyBackground4('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyBackground4('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyBackground4('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyBackground4('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyBackground4('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title4 Color: </p>
+                                    </div>                                  
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyTitleColor4('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyTitleColor4('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyTitleColor4('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyTitleColor4('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyTitleColor4('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>                                   
+                                </div>
+                    
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Color: </p>
+                                    </div>
+                                    <div class="postits-edit-buttons">
+                                        <button type="button" onclick="modifyContentColor4('#e662b8')"  class="button-colors" style="background: #e662b8"></button>
+                                        <button type="button" onclick="modifyContentColor4('#016fff')"  class="button-colors" style="background: #016fff"></button>
+                                        <button type="button" onclick="modifyContentColor4('#28f528')"  class="button-colors" style="background: #28f528"></button>
+                                        <button type="button" onclick="modifyContentColor4('yellow')"   class="button-colors" style="background: yellow"></button>
+                                        <button type="button" onclick="modifyContentColor4('#000000')"  class="button-colors" style="background: #000000"></button>
+                                    </div>
+                                </div>
+                            
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Title Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input type="text" id="title-text-input4" value="Title" class="postits-input">
+                                    </div>
+                                </div>
+
+                                <div class="postits-edit-div">
+                                    <div>
+                                        <p class="postits-edit-text">Change Content Text: </p>
+                                    </div>
+                                    <div class="postits-edit-input">
+                                        <input id="content-text-input4" type="text" value="Content" class="postits-input" placeholder="Content">
+                                    </div>
+                                </div>
+
+                                <div class="send-button-div">
+                                    <button onclick="insertContent4()" class="send-button">Send</button>
+                                </div>
+
+                            </div>                   
+
+                            <button class="delete-postit" onclick="removeContent4()"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                        </div>    
+                    </div>
+                    <div id="content-color4"class="postit-content">
+                        <p id="content-postit4" >  </p>
+                    </div>
+                    <div>
+                        <button onclick="movePostit4()" class="next-postit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="kanban-collum">
+            <div class="collum-title">
+                <h1>Doing</h1>
+            </div>
+
+            <div id="collum-doing" class="collum-content">
+            </div>
+        </div>
+
+
+
+        <div class="kanban-collum">
+            <div class="collum-title">
+                <h1>Done</h1>
+            </div>
+            <div id="collum-done" class="collum-content">
+            </div>
+        </div>
+    </section>
+        
+
+<script type="text/javascript" src="kanban.js"></script>
+</html>

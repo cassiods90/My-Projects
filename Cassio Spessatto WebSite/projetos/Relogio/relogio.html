@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="clock-alarm">
+        <div id="clock">
+            <h2>time now is</h2>
+            <div id="time">
+                <div><span id="hours">00</span><span id="hoursHours">Hours</span></div>
+                <div><span id="minutes">00</span><span id="minutesMinutes">Minutes</span></div>
+                <div><span id="seconds">00</span><span id="secondsSeconds">Seconds</span></div>
+            </div>
+        </div>
+    
+        <div class="alarm">
+            <h1 id="timer"></h1>
+            <audio id="myAudio">
+                <source src="alarm.mp3" type="audio/mpeg">
+            </audio>
+            <select id="hour"></select>
+            <select id="minute"></select>
+            <select id="second"></select>
+            <div>
+                <button id="startstop">Set Alarm</button>
+            </div>
+        
+        </div>
+    </div>
+    
+
+
+</body>
+        
+
+<script type="text/javascript" src="relogio.js"></script>
+</html>

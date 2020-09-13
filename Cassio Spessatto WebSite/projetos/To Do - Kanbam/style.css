@@ -1,0 +1,209 @@
+body{
+    background-color: lightblue;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.title {
+    color: #ac0808;
+    font-family: Pacifico, cursiva;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #ac0808;
+    margin-top: 0px;
+}
+
+.kanban {
+    width: 76%;
+    height: 82vh;
+    background: #f5f5ab;
+    display: flex;
+    justify-content: center;
+    margin-left: 12%;
+    margin-top: -25px;
+}
+
+.kanban-collum {
+    width: 33%;
+    border: 2px solid black;
+}
+
+.collum-title-todo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-postit {
+    border: none;
+    background: none;
+    font-size: 30px;
+}
+
+.collum-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.postit {
+    width: 90%;
+    height: 120px;
+    margin: 10px;
+    border-radius: 15px;
+    background: pink;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    
+}
+
+.postit-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.postit-title h1 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.edit-postit {
+    border: none;
+    background: none;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+.button-edit {
+    width: 49%;
+    height: 20%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.postits-edit {
+    position: absolute;
+    display:block;
+    width: 350px;
+    height: 660px;
+    background: #abf8eb;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5), 0 4px 20px 0 rgba(0,0,0,0.39);
+    border-radius: 15px;
+    border-color: black;
+    margin-left: 15px;
+}
+
+.postits-edit-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-colors {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.postits-edit-text{
+    font-family: cursive;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.postits-edit-input {
+    width: 100%;
+    height: 45px;
+}
+
+.postits-edit-input {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.postits-input{
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5), 0 4px 20px 0 rgba(0,0,0,0.39);
+    font-size: 18px;
+
+}
+
+.send-button-div {
+    margin-top:15px;
+    display: flex;
+    justify-content: center;
+}
+
+.send-button {
+    height: 45px;
+    margin-top: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5), 0 4px 20px 0 rgba(0,0,0,0.39);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.delete-postit {
+    border: none;
+    background: none;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.next-postit {
+    border: none;
+    background: none;
+    font-size: 15px;
+    margin-top: -5px;
+    float: right;
+}
+
+.postit-content {
+    text-align: justify;
+    font-size: 14px;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.collum-title {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
