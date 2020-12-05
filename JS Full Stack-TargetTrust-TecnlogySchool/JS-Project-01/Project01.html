@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tasks To do</h1>
+        <form class="search" >
+            <input type="text" name="search" placeholder="Search Task"></input>
+        </form>
+        
+
+        <div class="toDoDone">
+            <div class="toDoDiv">
+                <span>Tasks To do:</span>
+                <ul class="contentToDo">
+                    <li class="toDo">
+                        <span>Tasks To do Example</span><i class="fa fa-check complete" aria-hidden="true"></i><i class="fa fa-times delete" aria-hidden="true"></i>
+                    </li>
+                    
+                </ul>
+                <div class="removeAll">
+                    <button class="buttonRemoveAll" type="button" > Clean List <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                </div>
+            </div>
+            <div class="doneDiv">
+                <span>Tasks Done:</span>
+                <ul class="contentDone">
+                    <li class="done">
+                        <span>Tasks Done</span><i class="fa fa-check complete" aria-hidden="true"></i><i class="fa fa-times delete" aria-hidden="true"></i>
+                    </li>
+                    
+                </ul>
+                <div class="removeAllDone">
+                    <button class="buttonRemoveAll " type="button" > Clean List <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                </div>
+            </div>  
+        </div>
+        
+
+        
+
+        <form class="newToDo">
+            <span>Add New Task</span>
+            <input type="text" name="add" placeholder="New Task"></input>
+        </form>
+    </div>
+
+
+</body>
+    <script type="text/javascript" src="Project01.js"></script>
+</html>

@@ -1,0 +1,178 @@
+body{
+    background: linear-gradient(to right, #26D0CE, #1A2980); 
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1 {
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.toDoDone {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.toDoDiv,
+.doneDiv {
+    padding: 35px;
+}
+
+.toDoDiv span,
+.doneDiv span {
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 26px;
+    font-weight: bold;
+    padding: 15px 0;
+    color: white;
+    text-transform: capitalize;
+}
+
+.toDo,
+.done {
+    margin: 2px;
+    padding: 10px 10px;
+    width: 465px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, #5997B5,  #165573);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentToDo,
+.contentDone {
+    padding: 0;
+}
+
+
+
+h1:before {
+    content:"";
+    background: url("img/bulbasaur.png") no-repeat center center;
+    display: inline-block;
+    width: 100px;
+    height: 112px;
+    margin-right: 15px;
+}
+
+h1:after {
+    content:"";
+    background: url("img/charmander.png") no-repeat center center;
+    display: inline-block;
+    width: 100px;
+    height: 112px;
+    margin-left: 15px;
+}
+
+.fa-times {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.toDo:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.toDo:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.removeAll,
+.removeAllDone {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonRemoveAll {
+    width: 150px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    background: red;
+    border: 0;
+    font-size: 14px;
+    padding: 10px 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-trash {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.newToDo {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.newToDo span {
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+
+input {
+    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    width: 465px;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+
+
+.toDo span,
+.done span {
+    font-size: 20px;
+    padding: 5px 0;
+    color: white;
+    text-transform: capitalize;
+    flex: 2;
+    font-weight: 500;
+}
+
+.filtered {
+    display: none !important;
+}
+
+.fa-check {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.doneDiv .fa-check {
+    color: #00ff00;
+}
+
+.hide {
+    display: none;
+}
