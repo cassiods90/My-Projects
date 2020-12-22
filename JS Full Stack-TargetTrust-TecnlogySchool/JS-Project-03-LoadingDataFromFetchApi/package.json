@@ -1,0 +1,12 @@
+{
+  "name": "requests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  },
+  "scripts": {
+    "dev": "json-server --watch db.json"
+  }
+}

@@ -1,0 +1,28 @@
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid turquoise;
+    margin: 1rem;
+}
+
+.post-title {
+    font-size: 1.2em;
+    color: tomato;
+    font-style: italic;
+}
+
+.post-body {
+    margin: 0.5rem;
+}
+
+.post-author .author {
+    font-style: italic;
+}

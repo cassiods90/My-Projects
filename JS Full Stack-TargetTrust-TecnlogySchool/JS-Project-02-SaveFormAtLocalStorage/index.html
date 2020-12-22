@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Saver</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1> Form About you and pokemons</h1>
+        <h2> This project saves your form on a local storage</h2>
+    </header>
+
+    <form class="text" id="form-saver" autocomplete="off">
+        <div class="nameMail">
+            <div>
+                <label for="name">Name:</label>
+                <input class="text-input" type="text" name="name" id="name" />
+            </div>
+            
+            <div>
+                <label for="email">Mail:</label>
+                <input class="text-input" type="email" name="email" id="email" />
+            </div>
+        </div>
+        
+        <div class="phoneType">
+            <div>
+                <label for="phone">Phone:</label>
+                <input class="text-input" type="text" name="phone" id="phone" />
+            </div>
+            
+            <div class="favoritePokeType">
+                <label for="favoriteType">Type of favorite pokemon:</label>
+                
+                <select class="text-select" name="favoriteType" id="favoriteType">
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="grass">Grass</option>
+                    <option value="rock">Rock</option>
+                    <option value="normal">Normal</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="generationFavorite">
+            <div>
+                <div class="generationLike">Generations of Pokémon that like:</div>
+                <div class="generationLikeDiv">
+                    <input type="checkbox" name="generation" id="first-gen" value="Primeira Geração" />
+                    <label for="first-gen">1º Generation</label>                 
+                </div>
+                
+                <div class="generationLikeDiv">
+                    <input type="checkbox" name="generation" id="second-gen" value="Primeira Geração" />
+                    <label for="second-gen">2º Generation</label>                   
+                </div>
+                
+                <div class="generationLikeDiv">
+                    <input type="checkbox" name="generation" id="third-gen" value="Primeira Geração" />
+                    <label for="third-gen">3º Generation</label>      
+                </div>
+                
+                <div class="generationLikeDiv">
+                    <input type="checkbox" name="generation" id="fourth-gen" value="Primeira Geração" />
+                    <label for="fourth-gen">4º Generation</label>    
+                </div>
+                
+                <div class="generationLikeDiv">
+                    <input type="checkbox" name="generation" id="fifth-gen" value="Primeira Geração" />
+                    <label for="fifth-gen">5º Generation</label>   
+                </div>
+            </div>
+            
+            <div>
+                <div class="InitialFavorite">My favorite initial has the type:</div>
+                <div class="InitialFavoriteDiv">
+                    <input type="radio" name="starter" id="fire" value="Fogo" />
+                    <label for="fire">Fire</label>              
+                </div>
+                   
+                <div class="InitialFavoriteDiv">
+                    <input type="radio" name="starter" id="water" value="Água" />
+                    <label for="water">Water</label>              
+                </div>
+    
+                <div class="InitialFavoriteDiv">
+                    <input type="radio" name="starter" id="grass" value="Planta" />
+                    <label for="grass">Grass</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="feedback-div">
+            <label for="feedback">Tell what do yout think about Pokemons:</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="buttons">
+            <button type="submit">Submeter form </button>
+            <button class="showLocalStorage" type="button" >Check the content saved in the local storage</button>
+        </div>
+        
+        <div class="localStorageContent hide"> 
+        </div>        
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>

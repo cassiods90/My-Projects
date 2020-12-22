@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    margin: 0 0 200px 0;
+    padding: 0;
+    width: 100%;
+    /* background: linear-gradient(to right, #373b44, #4286f4); */
+    background: linear-gradient(to right, #5c258d, #4389a2);
+}
+
+h1 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+input,
+button {
+    width: 300px !important;
+}

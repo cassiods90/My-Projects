@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient( 109.6deg,  #05545e 16%, #bbb 91.1% );
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0 0 200px 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+header {
+    align-items: center;
+    border-bottom: 1px solid #F7B117;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #F7B117;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: #F7B117;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: -40px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form div {
+    padding: 5px 0;
+    width: 650px;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;   
+}
+
+.text-input {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 10px;
+    width: 80%;
+}
+
+.text-select {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 10px;
+    width: 86%;
+}
+
+.nameMail,
+.phoneType,
+.generationFavorite {
+    display: flex;
+}
+
+.nameMail div,
+.phoneType div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.generationFavorite div {
+    white-space: nowrap;
+    width: 50%;
+}
+
+.InitialFavorite,
+.generationLike {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-div {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background: #1f555c;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    margin: 20px 10px;
+    padding: 20px 20px;
+}
+
+.localStorageContent {
+    background: linear-gradient(to right, #1f555c, #3C9EAB);
+    border-radius: 10px;
+    border: 0;
+    height: 500px;
+    position: absolute;
+}
+
+.storageTitle {
+    border-bottom: 1px solid #F7B117;
+    display: flex;
+    justify-content: center;
+}
+
+.storageTitle h1 { 
+    font-size: 25px;
+}
+
+.storageData {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+span {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+.fa-times {
+    color: red;
+    cursor: pointer;
+    display: flex;
+    font-size: 25px;  
+    justify-content: flex-end;
+    margin-right: 5px;
+}    
+
+.hide {
+    display: none;
+}
