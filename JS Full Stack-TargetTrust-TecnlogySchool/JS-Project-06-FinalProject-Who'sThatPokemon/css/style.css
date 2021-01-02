@@ -1,0 +1,161 @@
+.borda-texto {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #205CAC;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hanalei Fill';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hanaleifill/v9/fC1mPYtObGbfyQznIaQzPQiMVw.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Pokemon";
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot");
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg");
+}
+.font-poke {
+  font-family: "Pokemon";
+}
+.font-title {
+  font-family: 'Hanalei Fill', cursive;
+}
+.font-text {
+  font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #c21500, #ffc500);
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #FFCC01;
+}
+header .title {
+  font-family: "Pokemon";
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #205CAC;
+  color: #FFCC01;
+  letter-spacing: 8px;
+  font-size: 25px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  padding: 0;
+}
+header .title .title-text {
+  padding: 10px 0;
+  margin: 0;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.main-content .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+}
+.main-content .content .content-left {
+  width: 60%;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .content .content-left .poke-image {
+  max-height: 350px;
+  filter: brightness(0);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.main-content .content .content-left .shadow {
+  filter: brightness(1);
+}
+.main-content .content .content-right {
+  width: 40%;
+  margin: 10px;
+}
+.main-content .content .content-right h1 {
+  font-family: "Pokemon";
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #205CAC;
+  font-size: 60px;
+  color: #FFCC01;
+  letter-spacing: 8px;
+  text-align: center;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+.main-content .content .content-right .input-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .content .content-right .input-button .input-poke,
+.main-content .content .content-right .input-button .random-poke {
+  border: 0;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  border: 2px solid #205CAC;
+}
+.main-content .content .content-right .input-button .input-poke:active,
+.main-content .content .content-right .input-button .random-poke:active,
+.main-content .content .content-right .input-button .input-poke:focus,
+.main-content .content .content-right .input-button .random-poke:focus {
+  outline: none;
+  border: none;
+}
+.main-content .content .content-right .input-button .input-poke {
+  width: 60%;
+}
+.main-content .content .content-right .input-button .random-poke {
+  width: 150px;
+  background: #FFCC01;
+  color: #205CAC;
+  cursor: pointer;
+}
+.guessed-pokes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guessed-pokes .guessed-text {
+  font-family: "Pokemon";
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #205CAC;
+  font-size: 40px;
+  color: #FFCC01;
+  letter-spacing: 8px;
+  text-align: center;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */

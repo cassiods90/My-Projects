@@ -1,0 +1,46 @@
+{
+	"files": {
+		"style.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "style.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"variables.less",
+				"content.less"
+			]
+		},
+		"less/style.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/style.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"../../../../../../Program Files (x86)/Crunch/https:/fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap",
+				"../../../../../../Program Files (x86)/Crunch/https:/fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap",
+				"content.less",
+				"variables.less"
+			]
+		}
+	}
+}
