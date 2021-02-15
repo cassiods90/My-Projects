@@ -1,0 +1,52 @@
+/* Start Color Variables */
+@base-color: #0f2027;
+@sec-color: #203a43;
+@third-color: #2c5364;
+
+@text-color: #ffffff;
+@yellow: #FFCC01;
+@blue: #205CAC;
+/* Start Color Variables */
+
+
+/* Start Fonts Variables */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+@font-face {
+    font-family: "Pokemon";
+    src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); 
+    src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"),
+         url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), 
+         url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), 
+         url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), 
+         url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg"); 
+}
+
+.font-poke {
+    font-family: "Pokemon";
+}
+
+.font-title {
+    font-family: 'Hanalei Fill', cursive;
+}
+
+.font-text {
+    font-family: 'Roboto', sans-serif;
+}
+/* End Fonts Variables */
+
+
+/* Start Mixins */
+.borda-texto {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: @blue;
+}
+
+.transition(@transition: all 500ms ease) {
+	-webkit-transition: @transition;  
+	-moz-transition: @transition;
+	-ms-transition: @transition; 
+	-o-transition: @transition;  
+}
+/* End Mixins */

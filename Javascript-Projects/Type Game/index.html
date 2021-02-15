@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ----------     Import Font-awesome 4.7     ---------- -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- ----------     Import CSS files     ---------- -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ----------     Import JQuery Libs     ---------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Project</title>
+</head>
+
+<body>    
+    <section class="content">
+        <div class="content-text">
+            <h1> This Lorem Ipsum text have 150 words and yout objective is type faster as you can.</h1>
+
+            <p class="original-phrase">neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate</p>
+        </div>
+
+        
+    </section>
+    
+    <section class="game">
+        <div class="game-information">
+            <h1 class="game-information-title">Game Information: </h1>
+            <div class="game-options">
+                <div class="game-start">
+                    <span> <i class="fa fa-clock-o" aria-hidden="true">  </i>  <strong class="time-left">50 </strong> seconds </span>
+                    <span class="phrase-size"> <i class="fa fa-file-text" aria-hidden="true"></i>  0 words   </span>
+                </div>
+                <div class="game-status">
+                    <span> <i class="fa fa-keyboard-o" aria-hidden="true"></i>  <strong class="words-typed"> 0 </strong> Words Typed  </span>
+                    <span> <i class="fa fa-file-text" aria-hidden="true"></i> <strong class="character-typed"> 0 </strong> Characters Typed    </span>
+                </div>
+            </div>   
+        </div>
+        
+        <div class="type-field">
+            <textarea class="field-game-area"></textarea>
+        </div>
+        
+        <div class="game-buttons">
+            <div class="restart-button">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </div>
+            
+            <div class="scoreboard-button">
+                <i class="fa fa-history" aria-hidden="true"></i>
+            </div>
+            
+            <div class="scoreboard-input">
+                <input class="name-input" placeholder="Type your Name">
+            </div>
+        </div> 
+
+        <div class="msg-error">
+
+        </div>
+    </section>
+    
+    <section class="scoreboard">
+        <h1 class="scoreboard-title">Scoreboard:</h1>
+
+        <ul class="scoreboard-results">
+            <li class="people-results">
+                <p class="people-name">Name:</p>
+                <p class="peplo-word">Words:</p>
+                <p class="people-character">Characters:</p>
+                <p class="people-remove"><i class="fa fa-trash" aria-hidden="true"></i></p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ----------     Import js files     ---------- -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

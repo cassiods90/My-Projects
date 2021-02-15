@@ -1,0 +1,61 @@
+/* Start Color Variables */
+/* Start Color Variables */
+/* Start Fonts Variables */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+.font-text {
+  font-family: 'Roboto', sans-serif;
+}
+/* End Fonts Variables */
+/* Start Mixins */
+/* End Mixins */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #fff, #fff, #fff);
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+header .header {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .header .title-text {
+  letter-spacing: 3px;
+  font-size: 40px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
+  margin: 0;
+}
+header .header .input-field .input-name {
+  border: 0;
+  height: 40px;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 2px 15px;
+  width: 450px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,186 @@
+/* Start Color Variables */
+/* Start Color Variables */
+/* Start Fonts Variables */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hanalei Fill';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hanaleifill/v9/fC1mPYtObGbfyQznIaQzPQiMVw.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Pokemon";
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot");
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg");
+}
+.font-poke {
+  font-family: "Pokemon";
+}
+.font-title {
+  font-family: 'Hanalei Fill', cursive;
+}
+.font-text {
+  font-family: 'Roboto', sans-serif;
+}
+/* End Fonts Variables */
+/* Start Mixins */
+.borda-texto {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #205CAC;
+}
+/* End Mixins */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #FFCC01;
+}
+header .header {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .header .title-text {
+  font-family: "Pokemon";
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #205CAC;
+  color: #FFCC01;
+  letter-spacing: 3px;
+  font-size: 40px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
+  margin: 0;
+}
+header .header .input-field .input-name {
+  border: 0;
+  height: 40px;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 2px 15px;
+  width: 450px;
+  font-size: 18px;
+}
+header .header .type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 960px;
+  padding: 20px 0;
+}
+header .header .type-filters .input-type,
+header .header .type-filters .input-all-type {
+  color: #FFCC01;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
+  margin: 5px;
+  text-transform: capitalize;
+  width: 110px;
+  max-width: 110px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+header .header .type-filters .input-type:hover,
+header .header .type-filters .input-all-type:hover {
+  color: #205CAC;
+  background: #FFCC01;
+  border: 0;
+  font-weight: 700;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+header .header .type-filters .input-all-type {
+  width: 230px;
+  max-width: 230px;
+}
+.filtered {
+  display: none !important;
+}
+.content-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px;
+}
+.content-list .content-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #FFCC01;
+  box-shadow: 4px 4px 4px rgba(255, 204, 1, 0.45);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  max-width: 240px;
+  max-height: 330px;
+  width: 240px;
+  height: 330px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.content-list .content-list-item .item-image {
+  width: 200px;
+}
+.content-list .content-list-item .item-title {
+  font-size: 25px;
+  color: #FFCC01;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  text-transform: capitalize;
+}
+.content-list .content-list-item .type-poke {
+  list-style: none;
+}
+.content-list .content-list-item .type-poke .type {
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.content-list .content-list-item:hover {
+  border: 1px solid #205CAC;
+  box-shadow: 4px 4px 4px rgba(32, 92, 172, 0.45);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+/*# sourceMappingURL=style.css.map */
