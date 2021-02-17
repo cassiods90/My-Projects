@@ -1,0 +1,146 @@
+/* Ajusta o posicionamento do menu e deixa tudo um do lado do outro */
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center; /* Centraliza os itens da vertical. Deixa tudo alinhado na mesma horizontal */
+    justify-content: space-between; /* Coloca o espaco sobrando da div no meio dos elementos */
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column; /* Ao invez de lateral, ele posiciona tudo na vertical */
+    flex-wrap: wrap; /* Faz a quebra de linha se não couber tudo no espaço da div, determinada pelo height abaixo */
+    height: 250px;
+
+}
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%; /* Separou os elementos */
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) { /* Ele pega os elementos multiplos de quarto +1. No caso são todos que estão na direita */ 
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) { /* Ele pega os elementos multiplos de quarto +1. No caso são todos que estão na esquerda */ 
+    margin-left: 0;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+.videoSobre-video{
+    flex-grow: 1;
+    flex-Shrink: 2
+}
+
+
+/* Ajustes para Mobile apartir daqui */
+@media(max-width: 768px){
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        margin: 0;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
+    }
+
+    .videoSobre-video{
+        margin: 0 auto;
+    }
+}
+
+
+/* Colocar todo espaço à esquerda, jogando o conteúdo para direita com justify-content: flex-end.
+
+Colocar todo espaço à direita, jogando o conteúdo para esquerda com justify-content: flex-start (que é o padrão).
+
+Colocar todo espaço à esquerda e à direita, jogando o conteúdo para o meio com justify-content: center.
+
+Colocar todo espaço entre os elementos como vimos antes usando justify-content: space-between.
+
+E uma possibilidade bem interessante também é colocar o espaço em volta dos elementos. Podemos usar o justify-content: space-around para isso. */

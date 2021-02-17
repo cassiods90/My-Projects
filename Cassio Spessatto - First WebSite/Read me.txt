@@ -1,0 +1,8 @@
+
+Hello, this my first website was developed and put into production in August 2020.
+
+Today we are in February 2021, my knowledge has evolved a lot, 
+I also learned sass and less and started studying javascript and react. 
+I see hundreds of errors on my first website, but I will not correct these errors, 
+as I am starting to develop a second version of this website, completely remodeled 
+and with concepts of ui and ux that I have been able to learn in the last few months.

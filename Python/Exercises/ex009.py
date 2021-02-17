@@ -1,0 +1,15 @@
+# Faça um programa que leia um numero inteiro qualquer e mostre na tela a sua tabuada.
+
+numero = int(input('Digite um numero para calcular a sua tabuada: '))
+print('-' * 15)
+print('{} X 01 = {}'.format(numero, (numero*1)))
+print('{} X 02 = {}'.format(numero, (numero*2)))
+print('{} X 03 = {}'.format(numero, (numero*3)))
+print('{} X 04 = {}'.format(numero, (numero*4)))
+print('{} X 05 = {}'.format(numero, (numero*5)))
+print('{} X 06 = {}'.format(numero, (numero*6)))
+print('{} X 07 = {}'.format(numero, (numero*7)))
+print('{} X 08 = {}'.format(numero, (numero*8)))
+print('{} X 09 = {}'.format(numero, (numero*9)))
+print('{} X 10 = {}'.format(numero, (numero*10)))
+print('-' * 15)

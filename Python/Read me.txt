@@ -1,0 +1,1 @@
+Hello, these python exercises were done until January 2020 and were my first contact with programming after studying some logic for programming.
