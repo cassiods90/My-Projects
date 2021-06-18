@@ -1,0 +1,137 @@
+/* text default Variables */
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
+}
+.font-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.font-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.font-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.font-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.font-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.font-extrabold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div {
+  background: #205CAC;
+}
+div h1 {
+  color: #FFCC01;
+}
+div p {
+  font-size: 14px;
+  color: #ffffff;
+}
+.text {
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.thumbnails-vertical-default {
+  left: 0px;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 0;
+}
+.thumbnails-vertical-default .product-thumbnails-list .product-thumbnails-item {
+  margin-bottom: 30px;
+  float: none !important;
+}
+.thumbnails-vertical-default .bx-wrapper {
+  padding: 20px 0;
+}
+.thumbnails-vertical-default .bx-wrapper .bx-controls a {
+  left: 10px;
+  right: 10px;
+}
+.thumbnails-vertical-default .bx-wrapper .bx-controls a.bx-prev {
+  top: 0;
+}
+.thumbnails-vertical-default .bx-wrapper .bx-controls a.bx-next {
+  bottom: 0;
+  top: initial;
+}
+.thumbnails-horizontal-default .product-thumbnails-list {
+  display: table;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.thumbnails-horizontal-default .product-thumbnails-list .product-thumbnails-item {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+.thumbnails-horizontal-default .bx-wrapper {
+  padding: 0 50px;
+}
+.thumbnails-horizontal-default .bx-wrapper .bx-controls a {
+  margin-top: -20px;
+}
+
+/*# sourceMappingURL=style.css.map */

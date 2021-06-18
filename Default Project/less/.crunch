@@ -1,0 +1,26 @@
+{
+	"files": {
+		"style.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/style.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"../../../../../../../Program Files (x86)/Crunch/https:/fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap",
+				"content.less",
+				"mixins.less",
+				"variables.less"
+			]
+		}
+	}
+}
